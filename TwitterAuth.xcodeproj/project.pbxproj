@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCCC64EF19A13DB300590A50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC64EE19A13DB300590A50 /* Foundation.framework */; };
+		FCCC64F119A13DB300590A50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC64F019A13DB300590A50 /* CoreGraphics.framework */; };
+		FCCC64F319A13DB300590A50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC64F219A13DB300590A50 /* UIKit.framework */; };
+		FCCC64F919A13DB300590A50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCCC64F719A13DB300590A50 /* InfoPlist.strings */; };
+		FCCC64FB19A13DB300590A50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC64FA19A13DB300590A50 /* main.m */; };
+		FCCC64FF19A13DB300590A50 /* AIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC64FE19A13DB300590A50 /* AIAppDelegate.m */; };
+		FCCC650219A13DB300590A50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCCC650019A13DB300590A50 /* Main.storyboard */; };
+		FCCC650519A13DB300590A50 /* AIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC650419A13DB300590A50 /* AIViewController.m */; };
+		FCCC650719A13DB300590A50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCCC650619A13DB300590A50 /* Images.xcassets */; };
+		FCCC650E19A13DB300590A50 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC650D19A13DB300590A50 /* XCTest.framework */; };
+		FCCC650F19A13DB300590A50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC64EE19A13DB300590A50 /* Foundation.framework */; };
+		FCCC651019A13DB300590A50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC64F219A13DB300590A50 /* UIKit.framework */; };
+		FCCC651819A13DB300590A50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCCC651619A13DB300590A50 /* InfoPlist.strings */; };
+		FCCC651A19A13DB300590A50 /* TwitterAuthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC651919A13DB300590A50 /* TwitterAuthTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCCC651119A13DB300590A50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCCC64E319A13DB300590A50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCCC64EA19A13DB300590A50;
+			remoteInfo = TwitterAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FCCC64EB19A13DB300590A50 /* TwitterAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCC64EE19A13DB300590A50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FCCC64F019A13DB300590A50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FCCC64F219A13DB300590A50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FCCC64F619A13DB300590A50 /* TwitterAuth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitterAuth-Info.plist"; sourceTree = "<group>"; };
+		FCCC64F819A13DB300590A50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FCCC64FA19A13DB300590A50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FCCC64FC19A13DB300590A50 /* TwitterAuth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwitterAuth-Prefix.pch"; sourceTree = "<group>"; };
+		FCCC64FD19A13DB300590A50 /* AIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIAppDelegate.h; sourceTree = "<group>"; };
+		FCCC64FE19A13DB300590A50 /* AIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIAppDelegate.m; sourceTree = "<group>"; };
+		FCCC650119A13DB300590A50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCCC650319A13DB300590A50 /* AIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIViewController.h; sourceTree = "<group>"; };
+		FCCC650419A13DB300590A50 /* AIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIViewController.m; sourceTree = "<group>"; };
+		FCCC650619A13DB300590A50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FCCC650C19A13DB300590A50 /* TwitterAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCC650D19A13DB300590A50 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FCCC651519A13DB300590A50 /* TwitterAuthTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitterAuthTests-Info.plist"; sourceTree = "<group>"; };
+		FCCC651719A13DB300590A50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FCCC651919A13DB300590A50 /* TwitterAuthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterAuthTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCCC64E819A13DB300590A50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCC64F119A13DB300590A50 /* CoreGraphics.framework in Frameworks */,
+				FCCC64F319A13DB300590A50 /* UIKit.framework in Frameworks */,
+				FCCC64EF19A13DB300590A50 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCC650919A13DB300590A50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCC650E19A13DB300590A50 /* XCTest.framework in Frameworks */,
+				FCCC651019A13DB300590A50 /* UIKit.framework in Frameworks */,
+				FCCC650F19A13DB300590A50 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCCC64E219A13DB300590A50 = {
+			isa = PBXGroup;
+			children = (
+				FCCC64F419A13DB300590A50 /* TwitterAuth */,
+				FCCC651319A13DB300590A50 /* TwitterAuthTests */,
+				FCCC64ED19A13DB300590A50 /* Frameworks */,
+				FCCC64EC19A13DB300590A50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCCC64EC19A13DB300590A50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCCC64EB19A13DB300590A50 /* TwitterAuth.app */,
+				FCCC650C19A13DB300590A50 /* TwitterAuthTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCCC64ED19A13DB300590A50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCCC64EE19A13DB300590A50 /* Foundation.framework */,
+				FCCC64F019A13DB300590A50 /* CoreGraphics.framework */,
+				FCCC64F219A13DB300590A50 /* UIKit.framework */,
+				FCCC650D19A13DB300590A50 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCCC64F419A13DB300590A50 /* TwitterAuth */ = {
+			isa = PBXGroup;
+			children = (
+				FCCC64FD19A13DB300590A50 /* AIAppDelegate.h */,
+				FCCC64FE19A13DB300590A50 /* AIAppDelegate.m */,
+				FCCC650019A13DB300590A50 /* Main.storyboard */,
+				FCCC650319A13DB300590A50 /* AIViewController.h */,
+				FCCC650419A13DB300590A50 /* AIViewController.m */,
+				FCCC650619A13DB300590A50 /* Images.xcassets */,
+				FCCC64F519A13DB300590A50 /* Supporting Files */,
+			);
+			path = TwitterAuth;
+			sourceTree = "<group>";
+		};
+		FCCC64F519A13DB300590A50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCCC64F619A13DB300590A50 /* TwitterAuth-Info.plist */,
+				FCCC64F719A13DB300590A50 /* InfoPlist.strings */,
+				FCCC64FA19A13DB300590A50 /* main.m */,
+				FCCC64FC19A13DB300590A50 /* TwitterAuth-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCCC651319A13DB300590A50 /* TwitterAuthTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCCC651919A13DB300590A50 /* TwitterAuthTests.m */,
+				FCCC651419A13DB300590A50 /* Supporting Files */,
+			);
+			path = TwitterAuthTests;
+			sourceTree = "<group>";
+		};
+		FCCC651419A13DB300590A50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCCC651519A13DB300590A50 /* TwitterAuthTests-Info.plist */,
+				FCCC651619A13DB300590A50 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCCC64EA19A13DB300590A50 /* TwitterAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCCC651D19A13DB300590A50 /* Build configuration list for PBXNativeTarget "TwitterAuth" */;
+			buildPhases = (
+				FCCC64E719A13DB300590A50 /* Sources */,
+				FCCC64E819A13DB300590A50 /* Frameworks */,
+				FCCC64E919A13DB300590A50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitterAuth;
+			productName = TwitterAuth;
+			productReference = FCCC64EB19A13DB300590A50 /* TwitterAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCCC650B19A13DB300590A50 /* TwitterAuthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCCC652019A13DB300590A50 /* Build configuration list for PBXNativeTarget "TwitterAuthTests" */;
+			buildPhases = (
+				FCCC650819A13DB300590A50 /* Sources */,
+				FCCC650919A13DB300590A50 /* Frameworks */,
+				FCCC650A19A13DB300590A50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCCC651219A13DB300590A50 /* PBXTargetDependency */,
+			);
+			name = TwitterAuthTests;
+			productName = TwitterAuthTests;
+			productReference = FCCC650C19A13DB300590A50 /* TwitterAuthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCCC64E319A13DB300590A50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AI;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ahmedibrahim;
+				TargetAttributes = {
+					FCCC650B19A13DB300590A50 = {
+						TestTargetID = FCCC64EA19A13DB300590A50;
+					};
+				};
+			};
+			buildConfigurationList = FCCC64E619A13DB300590A50 /* Build configuration list for PBXProject "TwitterAuth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCCC64E219A13DB300590A50;
+			productRefGroup = FCCC64EC19A13DB300590A50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCCC64EA19A13DB300590A50 /* TwitterAuth */,
+				FCCC650B19A13DB300590A50 /* TwitterAuthTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCCC64E919A13DB300590A50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCC650719A13DB300590A50 /* Images.xcassets in Resources */,
+				FCCC64F919A13DB300590A50 /* InfoPlist.strings in Resources */,
+				FCCC650219A13DB300590A50 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCC650A19A13DB300590A50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCC651819A13DB300590A50 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCCC64E719A13DB300590A50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCC64FF19A13DB300590A50 /* AIAppDelegate.m in Sources */,
+				FCCC650519A13DB300590A50 /* AIViewController.m in Sources */,
+				FCCC64FB19A13DB300590A50 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCC650819A13DB300590A50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCC651A19A13DB300590A50 /* TwitterAuthTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCCC651219A13DB300590A50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCCC64EA19A13DB300590A50 /* TwitterAuth */;
+			targetProxy = FCCC651119A13DB300590A50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCCC64F719A13DB300590A50 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCCC64F819A13DB300590A50 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FCCC650019A13DB300590A50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCCC650119A13DB300590A50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCCC651619A13DB300590A50 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCCC651719A13DB300590A50 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCCC651B19A13DB300590A50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FCCC651C19A13DB300590A50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCCC651E19A13DB300590A50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwitterAuth/TwitterAuth-Prefix.pch";
+				INFOPLIST_FILE = "TwitterAuth/TwitterAuth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FCCC651F19A13DB300590A50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwitterAuth/TwitterAuth-Prefix.pch";
+				INFOPLIST_FILE = "TwitterAuth/TwitterAuth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FCCC652119A13DB300590A50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TwitterAuth.app/TwitterAuth";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwitterAuth/TwitterAuth-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TwitterAuthTests/TwitterAuthTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FCCC652219A13DB300590A50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TwitterAuth.app/TwitterAuth";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwitterAuth/TwitterAuth-Prefix.pch";
+				INFOPLIST_FILE = "TwitterAuthTests/TwitterAuthTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCCC64E619A13DB300590A50 /* Build configuration list for PBXProject "TwitterAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCC651B19A13DB300590A50 /* Debug */,
+				FCCC651C19A13DB300590A50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCCC651D19A13DB300590A50 /* Build configuration list for PBXNativeTarget "TwitterAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCC651E19A13DB300590A50 /* Debug */,
+				FCCC651F19A13DB300590A50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FCCC652019A13DB300590A50 /* Build configuration list for PBXNativeTarget "TwitterAuthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCC652119A13DB300590A50 /* Debug */,
+				FCCC652219A13DB300590A50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCCC64E319A13DB300590A50 /* Project object */;
+}
