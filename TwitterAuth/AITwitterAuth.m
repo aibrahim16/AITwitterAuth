@@ -30,6 +30,12 @@
     return [self errorWithCode:AITwitterAuthErrorUserCancelled localizedDescription:errorDescription];
 }
 
++ (NSError *)permissionNotGrantedError
+{
+    NSString *errorDescription = @"Permission not granted, go to Settings->Privacy->Twitter and make sure that app is permitted to access your account.";
+    return [self errorWithCode:AITwitterAuthErrorUserCancelled localizedDescription:errorDescription];
+}
+
 + (void)showActionSheetForAccounts:(NSArray *)accounts
              withCompletionHandler:(void (^) (ACAccount *account))completionHandler
                      cancelHandler:(void (^) (void))cancelHandler
@@ -62,25 +68,28 @@
     else {
         ACAccountStore *accountStore = [[ACAccountStore alloc] init];
         ACAccountType *accountType = [accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
+        
         [accountStore requestAccessToAccountsWithType:accountType options:nil completion:^(BOOL granted, NSError *error) {
-            if (granted) {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    NSArray *accounts = [accountStore accountsWithAccountType:accountType];
-                    if (accounts.count) {
-                        [self selectAnAccountFromAccounts:accounts withCompletionHandler:completionHandler cancelHandler:^{
-                            if (failureHandler) {
-                                failureHandler([self cancelledError]);
-                            }
-                        }];
-                    }
-                    else if (failureHandler) {
-                        failureHandler([self noAccountConfiguredError]);
-                    }
-                });
-            }
-            else if (failureHandler) {
-                failureHandler(error);
-            }
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (!granted) {
+                    if (failureHandler) failureHandler([self permissionNotGrantedError]);
+                    return;
+                }
+                
+                NSArray *accounts = [accountStore accountsWithAccountType:accountType];
+                if (accounts.count) {
+                    [self selectAnAccountFromAccounts:accounts withCompletionHandler:completionHandler cancelHandler:^{
+                        if (failureHandler) {
+                            failureHandler([self cancelledError]);
+                        }
+                    }];
+                }
+                else if (failureHandler) {
+                    failureHandler([self noAccountConfiguredError]);
+                }
+            });
+            
         }];
     }
 }
