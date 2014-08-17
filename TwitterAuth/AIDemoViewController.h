@@ -1,5 +1,5 @@
 //
-//  AIViewController.h
+//  AIDemoViewController.h
 //  TwitterAuth
 //
 //  Created by Ahmed Ibrahim on 8/17/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AIViewController : UIViewController
+@interface AIDemoViewController : UIViewController
 
 @end

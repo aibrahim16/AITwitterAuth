@@ -14,13 +14,15 @@
 		FCCC64FB19A13DB300590A50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC64FA19A13DB300590A50 /* main.m */; };
 		FCCC64FF19A13DB300590A50 /* AIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC64FE19A13DB300590A50 /* AIAppDelegate.m */; };
 		FCCC650219A13DB300590A50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCCC650019A13DB300590A50 /* Main.storyboard */; };
-		FCCC650519A13DB300590A50 /* AIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC650419A13DB300590A50 /* AIViewController.m */; };
 		FCCC650719A13DB300590A50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCCC650619A13DB300590A50 /* Images.xcassets */; };
 		FCCC650E19A13DB300590A50 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC650D19A13DB300590A50 /* XCTest.framework */; };
 		FCCC650F19A13DB300590A50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC64EE19A13DB300590A50 /* Foundation.framework */; };
 		FCCC651019A13DB300590A50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC64F219A13DB300590A50 /* UIKit.framework */; };
 		FCCC651819A13DB300590A50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCCC651619A13DB300590A50 /* InfoPlist.strings */; };
 		FCCC651A19A13DB300590A50 /* TwitterAuthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC651919A13DB300590A50 /* TwitterAuthTests.m */; };
+		FCCC652519A13DF400590A50 /* AITwitterAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC652419A13DF400590A50 /* AITwitterAuth.m */; };
+		FCCC652919A13F0E00590A50 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC652819A13F0E00590A50 /* Twitter.framework */; };
+		FCCC652F19A1495700590A50 /* AIDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC652E19A1495700590A50 /* AIDemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +47,18 @@
 		FCCC64FD19A13DB300590A50 /* AIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIAppDelegate.h; sourceTree = "<group>"; };
 		FCCC64FE19A13DB300590A50 /* AIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIAppDelegate.m; sourceTree = "<group>"; };
 		FCCC650119A13DB300590A50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FCCC650319A13DB300590A50 /* AIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIViewController.h; sourceTree = "<group>"; };
-		FCCC650419A13DB300590A50 /* AIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIViewController.m; sourceTree = "<group>"; };
 		FCCC650619A13DB300590A50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FCCC650C19A13DB300590A50 /* TwitterAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCCC650D19A13DB300590A50 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FCCC651519A13DB300590A50 /* TwitterAuthTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitterAuthTests-Info.plist"; sourceTree = "<group>"; };
 		FCCC651719A13DB300590A50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FCCC651919A13DB300590A50 /* TwitterAuthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterAuthTests.m; sourceTree = "<group>"; };
+		FCCC652319A13DF400590A50 /* AITwitterAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITwitterAuth.h; sourceTree = "<group>"; };
+		FCCC652419A13DF400590A50 /* AITwitterAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AITwitterAuth.m; sourceTree = "<group>"; };
+		FCCC652619A13EFA00590A50 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		FCCC652819A13F0E00590A50 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		FCCC652D19A1495700590A50 /* AIDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDemoViewController.h; sourceTree = "<group>"; };
+		FCCC652E19A1495700590A50 /* AIDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIDemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCCC652919A13F0E00590A50 /* Twitter.framework in Frameworks */,
 				FCCC64F119A13DB300590A50 /* CoreGraphics.framework in Frameworks */,
 				FCCC64F319A13DB300590A50 /* UIKit.framework in Frameworks */,
 				FCCC64EF19A13DB300590A50 /* Foundation.framework in Frameworks */,
@@ -101,6 +108,8 @@
 		FCCC64ED19A13DB300590A50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FCCC652819A13F0E00590A50 /* Twitter.framework */,
+				FCCC652619A13EFA00590A50 /* Accounts.framework */,
 				FCCC64EE19A13DB300590A50 /* Foundation.framework */,
 				FCCC64F019A13DB300590A50 /* CoreGraphics.framework */,
 				FCCC64F219A13DB300590A50 /* UIKit.framework */,
@@ -115,8 +124,10 @@
 				FCCC64FD19A13DB300590A50 /* AIAppDelegate.h */,
 				FCCC64FE19A13DB300590A50 /* AIAppDelegate.m */,
 				FCCC650019A13DB300590A50 /* Main.storyboard */,
-				FCCC650319A13DB300590A50 /* AIViewController.h */,
-				FCCC650419A13DB300590A50 /* AIViewController.m */,
+				FCCC652319A13DF400590A50 /* AITwitterAuth.h */,
+				FCCC652419A13DF400590A50 /* AITwitterAuth.m */,
+				FCCC652D19A1495700590A50 /* AIDemoViewController.h */,
+				FCCC652E19A1495700590A50 /* AIDemoViewController.m */,
 				FCCC650619A13DB300590A50 /* Images.xcassets */,
 				FCCC64F519A13DB300590A50 /* Supporting Files */,
 			);
@@ -251,8 +262,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCCC64FF19A13DB300590A50 /* AIAppDelegate.m in Sources */,
-				FCCC650519A13DB300590A50 /* AIViewController.m in Sources */,
+				FCCC652519A13DF400590A50 /* AITwitterAuth.m in Sources */,
 				FCCC64FB19A13DB300590A50 /* main.m in Sources */,
+				FCCC652F19A1495700590A50 /* AIDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
