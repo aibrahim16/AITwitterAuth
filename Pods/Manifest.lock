@@ -1,0 +1,10 @@
+PODS:
+  - STTwitter (0.1.4)
+
+DEPENDENCIES:
+  - STTwitter (~> 0.1.4)
+
+SPEC CHECKSUMS:
+  STTwitter: 809f63f856341fdd103fbc6d9e4818d48a91be0c
+
+COCOAPODS: 0.33.1
