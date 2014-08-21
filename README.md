@@ -1,7 +1,7 @@
 AITwitterAuth is a library that is intended to simplify the Authentication process for Twitter
 
 ## Usage
-<pre><code>[AITwitterAuth authenticateWithCompletionHandler:^(ACAccount *account) {
+<pre><code>[AITwitterAuth authenticateWithCompletionHandler:^(AIAccount *account) {
         NSLog(@"%@", [NSString stringWithFormat:@"%@ has been successfully authenticated.", account.username]);
     } failureHandler:^(NSError *error) {
         NSLog(@"[ERROR]: %@", error.localizedDescription);
