@@ -1,1156 +1,529 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>1A0869C73E734E6E88DBDA7B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B24474DD06C1472BAD8121DD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>424668991E6E476192C0A907</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6C6C346E3072428B9C8B390B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>7D46520D70C5462D9848E706</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>B24474DD06C1472BAD8121DD</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>FCCC64E219A13DB300590A50</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FCCC64F419A13DB300590A50</string>
-				<string>FCCC651319A13DB300590A50</string>
-				<string>FCCC64ED19A13DB300590A50</string>
-				<string>FCCC64EC19A13DB300590A50</string>
-				<string>424668991E6E476192C0A907</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC64E319A13DB300590A50</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>AI</string>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>ahmedibrahim</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>FCCC650B19A13DB300590A50</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>FCCC64EA19A13DB300590A50</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>FCCC64E619A13DB300590A50</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>FCCC64E219A13DB300590A50</string>
-			<key>productRefGroup</key>
-			<string>FCCC64EC19A13DB300590A50</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>FCCC64EA19A13DB300590A50</string>
-				<string>FCCC650B19A13DB300590A50</string>
-			</array>
-		</dict>
-		<key>FCCC64E619A13DB300590A50</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>FCCC651B19A13DB300590A50</string>
-				<string>FCCC651C19A13DB300590A50</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>FCCC64E719A13DB300590A50</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FCCC64FF19A13DB300590A50</string>
-				<string>FCCC652519A13DF400590A50</string>
-				<string>FCCC64FB19A13DB300590A50</string>
-				<string>FCCC652F19A1495700590A50</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FCCC64E819A13DB300590A50</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FCCC652919A13F0E00590A50</string>
-				<string>FCCC64F119A13DB300590A50</string>
-				<string>FCCC64F319A13DB300590A50</string>
-				<string>FCCC64EF19A13DB300590A50</string>
-				<string>1A0869C73E734E6E88DBDA7B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FCCC64E919A13DB300590A50</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FCCC650719A13DB300590A50</string>
-				<string>FCCC64F919A13DB300590A50</string>
-				<string>FCCC650219A13DB300590A50</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FCCC64EA19A13DB300590A50</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>FCCC651D19A13DB300590A50</string>
-			<key>buildPhases</key>
-			<array>
-				<string>7D46520D70C5462D9848E706</string>
-				<string>FCCC64E719A13DB300590A50</string>
-				<string>FCCC64E819A13DB300590A50</string>
-				<string>FCCC64E919A13DB300590A50</string>
-				<string>6C6C346E3072428B9C8B390B</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TwitterAuth</string>
-			<key>productName</key>
-			<string>TwitterAuth</string>
-			<key>productReference</key>
-			<string>FCCC64EB19A13DB300590A50</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>FCCC64EB19A13DB300590A50</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TwitterAuth.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>FCCC64EC19A13DB300590A50</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FCCC64EB19A13DB300590A50</string>
-				<string>FCCC650C19A13DB300590A50</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC64ED19A13DB300590A50</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FCCC652819A13F0E00590A50</string>
-				<string>FCCC652619A13EFA00590A50</string>
-				<string>FCCC64EE19A13DB300590A50</string>
-				<string>FCCC64F019A13DB300590A50</string>
-				<string>FCCC64F219A13DB300590A50</string>
-				<string>FCCC650D19A13DB300590A50</string>
-				<string>B24474DD06C1472BAD8121DD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC64EE19A13DB300590A50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>FCCC64EF19A13DB300590A50</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCCC64EE19A13DB300590A50</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FCCC64F019A13DB300590A50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>FCCC64F119A13DB300590A50</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCCC64F019A13DB300590A50</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FCCC64F219A13DB300590A50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>FCCC64F319A13DB300590A50</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCCC64F219A13DB300590A50</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FCCC64F419A13DB300590A50</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FCCC64FD19A13DB300590A50</string>
-				<string>FCCC64FE19A13DB300590A50</string>
-				<string>FCCC650019A13DB300590A50</string>
-				<string>FCCC652319A13DF400590A50</string>
-				<string>FCCC652419A13DF400590A50</string>
-				<string>FCCC652D19A1495700590A50</string>
-				<string>FCCC652E19A1495700590A50</string>
-				<string>FCCC650619A13DB300590A50</string>
-				<string>FCCC64F519A13DB300590A50</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>TwitterAuth</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC64F519A13DB300590A50</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FCCC64F619A13DB300590A50</string>
-				<string>FCCC64F719A13DB300590A50</string>
-				<string>FCCC64FA19A13DB300590A50</string>
-				<string>FCCC64FC19A13DB300590A50</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC64F619A13DB300590A50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>TwitterAuth-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC64F719A13DB300590A50</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FCCC64F819A13DB300590A50</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC64F819A13DB300590A50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC64F919A13DB300590A50</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCCC64F719A13DB300590A50</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FCCC64FA19A13DB300590A50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC64FB19A13DB300590A50</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCCC64FA19A13DB300590A50</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FCCC64FC19A13DB300590A50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TwitterAuth-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC64FD19A13DB300590A50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AIAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC64FE19A13DB300590A50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AIAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC64FF19A13DB300590A50</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCCC64FE19A13DB300590A50</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FCCC650019A13DB300590A50</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FCCC650119A13DB300590A50</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC650119A13DB300590A50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC650219A13DB300590A50</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCCC650019A13DB300590A50</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FCCC650619A13DB300590A50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC650719A13DB300590A50</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCCC650619A13DB300590A50</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FCCC650819A13DB300590A50</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FCCC651A19A13DB300590A50</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FCCC650919A13DB300590A50</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FCCC650E19A13DB300590A50</string>
-				<string>FCCC651019A13DB300590A50</string>
-				<string>FCCC650F19A13DB300590A50</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FCCC650A19A13DB300590A50</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FCCC651819A13DB300590A50</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FCCC650B19A13DB300590A50</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>FCCC652019A13DB300590A50</string>
-			<key>buildPhases</key>
-			<array>
-				<string>FCCC650819A13DB300590A50</string>
-				<string>FCCC650919A13DB300590A50</string>
-				<string>FCCC650A19A13DB300590A50</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>FCCC651219A13DB300590A50</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TwitterAuthTests</string>
-			<key>productName</key>
-			<string>TwitterAuthTests</string>
-			<key>productReference</key>
-			<string>FCCC650C19A13DB300590A50</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>FCCC650C19A13DB300590A50</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TwitterAuthTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>FCCC650D19A13DB300590A50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>FCCC650E19A13DB300590A50</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCCC650D19A13DB300590A50</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FCCC650F19A13DB300590A50</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCCC64EE19A13DB300590A50</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FCCC651019A13DB300590A50</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCCC64F219A13DB300590A50</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FCCC651119A13DB300590A50</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>FCCC64E319A13DB300590A50</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>FCCC64EA19A13DB300590A50</string>
-			<key>remoteInfo</key>
-			<string>TwitterAuth</string>
-		</dict>
-		<key>FCCC651219A13DB300590A50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>FCCC64EA19A13DB300590A50</string>
-			<key>targetProxy</key>
-			<string>FCCC651119A13DB300590A50</string>
-		</dict>
-		<key>FCCC651319A13DB300590A50</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FCCC651919A13DB300590A50</string>
-				<string>FCCC651419A13DB300590A50</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>TwitterAuthTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC651419A13DB300590A50</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FCCC651519A13DB300590A50</string>
-				<string>FCCC651619A13DB300590A50</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC651519A13DB300590A50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>TwitterAuthTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC651619A13DB300590A50</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FCCC651719A13DB300590A50</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC651719A13DB300590A50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC651819A13DB300590A50</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCCC651619A13DB300590A50</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FCCC651919A13DB300590A50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TwitterAuthTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC651A19A13DB300590A50</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCCC651919A13DB300590A50</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FCCC651B19A13DB300590A50</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>FCCC651C19A13DB300590A50</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FCCC651D19A13DB300590A50</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>FCCC651E19A13DB300590A50</string>
-				<string>FCCC651F19A13DB300590A50</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>FCCC651E19A13DB300590A50</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>424668991E6E476192C0A907</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>TwitterAuth/TwitterAuth-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TwitterAuth/TwitterAuth-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>FCCC651F19A13DB300590A50</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>424668991E6E476192C0A907</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>TwitterAuth/TwitterAuth-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TwitterAuth/TwitterAuth-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FCCC652019A13DB300590A50</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>FCCC652119A13DB300590A50</string>
-				<string>FCCC652219A13DB300590A50</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>FCCC652119A13DB300590A50</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/TwitterAuth.app/TwitterAuth</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>TwitterAuth/TwitterAuth-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>TwitterAuthTests/TwitterAuthTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>FCCC652219A13DB300590A50</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/TwitterAuth.app/TwitterAuth</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>TwitterAuth/TwitterAuth-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TwitterAuthTests/TwitterAuthTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FCCC652319A13DF400590A50</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AITwitterAuth.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC652419A13DF400590A50</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AITwitterAuth.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC652519A13DF400590A50</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCCC652419A13DF400590A50</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FCCC652619A13EFA00590A50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Accounts.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Accounts.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>FCCC652819A13F0E00590A50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Twitter.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Twitter.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>FCCC652919A13F0E00590A50</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCCC652819A13F0E00590A50</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FCCC652D19A1495700590A50</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AIDemoViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC652E19A1495700590A50</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AIDemoViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCC652F19A1495700590A50</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCCC652E19A1495700590A50</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>FCCC64E319A13DB300590A50</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0869C73E734E6E88DBDA7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B24474DD06C1472BAD8121DD /* libPods.a */; };
+		FCCC64EF19A13DB300590A50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC64EE19A13DB300590A50 /* Foundation.framework */; };
+		FCCC64F119A13DB300590A50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC64F019A13DB300590A50 /* CoreGraphics.framework */; };
+		FCCC64F319A13DB300590A50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC64F219A13DB300590A50 /* UIKit.framework */; };
+		FCCC64F919A13DB300590A50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCCC64F719A13DB300590A50 /* InfoPlist.strings */; };
+		FCCC64FB19A13DB300590A50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC64FA19A13DB300590A50 /* main.m */; };
+		FCCC64FF19A13DB300590A50 /* AIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC64FE19A13DB300590A50 /* AIAppDelegate.m */; };
+		FCCC650219A13DB300590A50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCCC650019A13DB300590A50 /* Main.storyboard */; };
+		FCCC650719A13DB300590A50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCCC650619A13DB300590A50 /* Images.xcassets */; };
+		FCCC650E19A13DB300590A50 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC650D19A13DB300590A50 /* XCTest.framework */; };
+		FCCC650F19A13DB300590A50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC64EE19A13DB300590A50 /* Foundation.framework */; };
+		FCCC651019A13DB300590A50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC64F219A13DB300590A50 /* UIKit.framework */; };
+		FCCC651819A13DB300590A50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCCC651619A13DB300590A50 /* InfoPlist.strings */; };
+		FCCC651A19A13DB300590A50 /* TwitterAuthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC651919A13DB300590A50 /* TwitterAuthTests.m */; };
+		FCCC652519A13DF400590A50 /* AITwitterAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC652419A13DF400590A50 /* AITwitterAuth.m */; };
+		FCCC652919A13F0E00590A50 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC652819A13F0E00590A50 /* Twitter.framework */; };
+		FCCC652F19A1495700590A50 /* AIDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC652E19A1495700590A50 /* AIDemoViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCCC651119A13DB300590A50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCCC64E319A13DB300590A50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCCC64EA19A13DB300590A50;
+			remoteInfo = TwitterAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		424668991E6E476192C0A907 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		B24474DD06C1472BAD8121DD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCC64EB19A13DB300590A50 /* TwitterAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCC64EE19A13DB300590A50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FCCC64F019A13DB300590A50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FCCC64F219A13DB300590A50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FCCC64F619A13DB300590A50 /* TwitterAuth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitterAuth-Info.plist"; sourceTree = "<group>"; };
+		FCCC64F819A13DB300590A50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FCCC64FA19A13DB300590A50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FCCC64FC19A13DB300590A50 /* TwitterAuth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwitterAuth-Prefix.pch"; sourceTree = "<group>"; };
+		FCCC64FD19A13DB300590A50 /* AIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIAppDelegate.h; sourceTree = "<group>"; };
+		FCCC64FE19A13DB300590A50 /* AIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIAppDelegate.m; sourceTree = "<group>"; };
+		FCCC650119A13DB300590A50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCCC650619A13DB300590A50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FCCC650C19A13DB300590A50 /* TwitterAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCC650D19A13DB300590A50 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FCCC651519A13DB300590A50 /* TwitterAuthTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitterAuthTests-Info.plist"; sourceTree = "<group>"; };
+		FCCC651719A13DB300590A50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FCCC651919A13DB300590A50 /* TwitterAuthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterAuthTests.m; sourceTree = "<group>"; };
+		FCCC652319A13DF400590A50 /* AITwitterAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AITwitterAuth.h; path = Classes/AITwitterAuth.h; sourceTree = "<group>"; };
+		FCCC652419A13DF400590A50 /* AITwitterAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AITwitterAuth.m; path = Classes/AITwitterAuth.m; sourceTree = "<group>"; };
+		FCCC652619A13EFA00590A50 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		FCCC652819A13F0E00590A50 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		FCCC652D19A1495700590A50 /* AIDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDemoViewController.h; sourceTree = "<group>"; };
+		FCCC652E19A1495700590A50 /* AIDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIDemoViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCCC64E819A13DB300590A50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCC652919A13F0E00590A50 /* Twitter.framework in Frameworks */,
+				FCCC64F119A13DB300590A50 /* CoreGraphics.framework in Frameworks */,
+				FCCC64F319A13DB300590A50 /* UIKit.framework in Frameworks */,
+				FCCC64EF19A13DB300590A50 /* Foundation.framework in Frameworks */,
+				1A0869C73E734E6E88DBDA7B /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCC650919A13DB300590A50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCC650E19A13DB300590A50 /* XCTest.framework in Frameworks */,
+				FCCC651019A13DB300590A50 /* UIKit.framework in Frameworks */,
+				FCCC650F19A13DB300590A50 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCCC64E219A13DB300590A50 = {
+			isa = PBXGroup;
+			children = (
+				FCCC64F419A13DB300590A50 /* TwitterAuth */,
+				FCCC651319A13DB300590A50 /* TwitterAuthTests */,
+				FCCC64ED19A13DB300590A50 /* Frameworks */,
+				FCCC64EC19A13DB300590A50 /* Products */,
+				424668991E6E476192C0A907 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		FCCC64EC19A13DB300590A50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCCC64EB19A13DB300590A50 /* TwitterAuth.app */,
+				FCCC650C19A13DB300590A50 /* TwitterAuthTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCCC64ED19A13DB300590A50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCCC652819A13F0E00590A50 /* Twitter.framework */,
+				FCCC652619A13EFA00590A50 /* Accounts.framework */,
+				FCCC64EE19A13DB300590A50 /* Foundation.framework */,
+				FCCC64F019A13DB300590A50 /* CoreGraphics.framework */,
+				FCCC64F219A13DB300590A50 /* UIKit.framework */,
+				FCCC650D19A13DB300590A50 /* XCTest.framework */,
+				B24474DD06C1472BAD8121DD /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCCC64F419A13DB300590A50 /* TwitterAuth */ = {
+			isa = PBXGroup;
+			children = (
+				FCCC652319A13DF400590A50 /* AITwitterAuth.h */,
+				FCCC652419A13DF400590A50 /* AITwitterAuth.m */,
+				FCCC64FD19A13DB300590A50 /* AIAppDelegate.h */,
+				FCCC64FE19A13DB300590A50 /* AIAppDelegate.m */,
+				FCCC650019A13DB300590A50 /* Main.storyboard */,
+				FCCC652D19A1495700590A50 /* AIDemoViewController.h */,
+				FCCC652E19A1495700590A50 /* AIDemoViewController.m */,
+				FCCC650619A13DB300590A50 /* Images.xcassets */,
+				FCCC64F519A13DB300590A50 /* Supporting Files */,
+			);
+			path = TwitterAuth;
+			sourceTree = "<group>";
+		};
+		FCCC64F519A13DB300590A50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCCC64F619A13DB300590A50 /* TwitterAuth-Info.plist */,
+				FCCC64F719A13DB300590A50 /* InfoPlist.strings */,
+				FCCC64FA19A13DB300590A50 /* main.m */,
+				FCCC64FC19A13DB300590A50 /* TwitterAuth-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCCC651319A13DB300590A50 /* TwitterAuthTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCCC651919A13DB300590A50 /* TwitterAuthTests.m */,
+				FCCC651419A13DB300590A50 /* Supporting Files */,
+			);
+			path = TwitterAuthTests;
+			sourceTree = "<group>";
+		};
+		FCCC651419A13DB300590A50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCCC651519A13DB300590A50 /* TwitterAuthTests-Info.plist */,
+				FCCC651619A13DB300590A50 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCCC64EA19A13DB300590A50 /* TwitterAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCCC651D19A13DB300590A50 /* Build configuration list for PBXNativeTarget "TwitterAuth" */;
+			buildPhases = (
+				7D46520D70C5462D9848E706 /* Check Pods Manifest.lock */,
+				FCCC64E719A13DB300590A50 /* Sources */,
+				FCCC64E819A13DB300590A50 /* Frameworks */,
+				FCCC64E919A13DB300590A50 /* Resources */,
+				6C6C346E3072428B9C8B390B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitterAuth;
+			productName = TwitterAuth;
+			productReference = FCCC64EB19A13DB300590A50 /* TwitterAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCCC650B19A13DB300590A50 /* TwitterAuthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCCC652019A13DB300590A50 /* Build configuration list for PBXNativeTarget "TwitterAuthTests" */;
+			buildPhases = (
+				FCCC650819A13DB300590A50 /* Sources */,
+				FCCC650919A13DB300590A50 /* Frameworks */,
+				FCCC650A19A13DB300590A50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCCC651219A13DB300590A50 /* PBXTargetDependency */,
+			);
+			name = TwitterAuthTests;
+			productName = TwitterAuthTests;
+			productReference = FCCC650C19A13DB300590A50 /* TwitterAuthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCCC64E319A13DB300590A50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AI;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ahmedibrahim;
+				TargetAttributes = {
+					FCCC650B19A13DB300590A50 = {
+						TestTargetID = FCCC64EA19A13DB300590A50;
+					};
+				};
+			};
+			buildConfigurationList = FCCC64E619A13DB300590A50 /* Build configuration list for PBXProject "TwitterAuth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCCC64E219A13DB300590A50;
+			productRefGroup = FCCC64EC19A13DB300590A50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCCC64EA19A13DB300590A50 /* TwitterAuth */,
+				FCCC650B19A13DB300590A50 /* TwitterAuthTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCCC64E919A13DB300590A50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCC650719A13DB300590A50 /* Images.xcassets in Resources */,
+				FCCC64F919A13DB300590A50 /* InfoPlist.strings in Resources */,
+				FCCC650219A13DB300590A50 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCC650A19A13DB300590A50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCC651819A13DB300590A50 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C6C346E3072428B9C8B390B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D46520D70C5462D9848E706 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCCC64E719A13DB300590A50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCC64FF19A13DB300590A50 /* AIAppDelegate.m in Sources */,
+				FCCC652519A13DF400590A50 /* AITwitterAuth.m in Sources */,
+				FCCC64FB19A13DB300590A50 /* main.m in Sources */,
+				FCCC652F19A1495700590A50 /* AIDemoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCC650819A13DB300590A50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCC651A19A13DB300590A50 /* TwitterAuthTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCCC651219A13DB300590A50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCCC64EA19A13DB300590A50 /* TwitterAuth */;
+			targetProxy = FCCC651119A13DB300590A50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCCC64F719A13DB300590A50 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCCC64F819A13DB300590A50 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FCCC650019A13DB300590A50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCCC650119A13DB300590A50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCCC651619A13DB300590A50 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCCC651719A13DB300590A50 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCCC651B19A13DB300590A50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FCCC651C19A13DB300590A50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCCC651E19A13DB300590A50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 424668991E6E476192C0A907 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwitterAuth/TwitterAuth-Prefix.pch";
+				INFOPLIST_FILE = "TwitterAuth/TwitterAuth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FCCC651F19A13DB300590A50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 424668991E6E476192C0A907 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwitterAuth/TwitterAuth-Prefix.pch";
+				INFOPLIST_FILE = "TwitterAuth/TwitterAuth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FCCC652119A13DB300590A50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TwitterAuth.app/TwitterAuth";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwitterAuth/TwitterAuth-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TwitterAuthTests/TwitterAuthTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FCCC652219A13DB300590A50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TwitterAuth.app/TwitterAuth";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwitterAuth/TwitterAuth-Prefix.pch";
+				INFOPLIST_FILE = "TwitterAuthTests/TwitterAuthTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCCC64E619A13DB300590A50 /* Build configuration list for PBXProject "TwitterAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCC651B19A13DB300590A50 /* Debug */,
+				FCCC651C19A13DB300590A50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCCC651D19A13DB300590A50 /* Build configuration list for PBXNativeTarget "TwitterAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCC651E19A13DB300590A50 /* Debug */,
+				FCCC651F19A13DB300590A50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCCC652019A13DB300590A50 /* Build configuration list for PBXNativeTarget "TwitterAuthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCC652119A13DB300590A50 /* Debug */,
+				FCCC652219A13DB300590A50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCCC64E319A13DB300590A50 /* Project object */;
+}
