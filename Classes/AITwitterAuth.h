@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <Accounts/Accounts.h>
+#import "AIAccount.h"
 
 static NSString *const AITwitterAuthDomain = @"com.ahmedibrahim.aitwitterauth";
 
@@ -18,6 +19,6 @@ typedef enum AITwitterAuthError {
 }AITwitterAuthError;
 
 @interface AITwitterAuth : NSObject
-+ (void)authenticateWithCompletionHandler:(void (^) (ACAccount *account))completionHandler
++ (void)authenticateWithCompletionHandler:(void (^) (AIAccount *account))completionHandler
                            failureHandler:(void (^) (NSError *error))failureHandler;
 @end

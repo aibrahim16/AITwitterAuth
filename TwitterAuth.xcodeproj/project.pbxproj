@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A0869C73E734E6E88DBDA7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B24474DD06C1472BAD8121DD /* libPods.a */; };
+		FC735EDC19A5A24200D1EB8F /* AIAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = FC735EDB19A5A24200D1EB8F /* AIAccount.m */; };
 		FCCC64EF19A13DB300590A50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC64EE19A13DB300590A50 /* Foundation.framework */; };
 		FCCC64F119A13DB300590A50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC64F019A13DB300590A50 /* CoreGraphics.framework */; };
 		FCCC64F319A13DB300590A50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC64F219A13DB300590A50 /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		424668991E6E476192C0A907 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B24474DD06C1472BAD8121DD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC735EDA19A5A24200D1EB8F /* AIAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIAccount.h; path = ../Classes/AIAccount.h; sourceTree = "<group>"; };
+		FC735EDB19A5A24200D1EB8F /* AIAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AIAccount.m; path = ../Classes/AIAccount.m; sourceTree = "<group>"; };
 		FCCC64EB19A13DB300590A50 /* TwitterAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCCC64EE19A13DB300590A50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FCCC64F019A13DB300590A50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,8 +59,8 @@
 		FCCC651519A13DB300590A50 /* TwitterAuthTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitterAuthTests-Info.plist"; sourceTree = "<group>"; };
 		FCCC651719A13DB300590A50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FCCC651919A13DB300590A50 /* TwitterAuthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterAuthTests.m; sourceTree = "<group>"; };
-		FCCC652319A13DF400590A50 /* AITwitterAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AITwitterAuth.h; path = Classes/AITwitterAuth.h; sourceTree = "<group>"; };
-		FCCC652419A13DF400590A50 /* AITwitterAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AITwitterAuth.m; path = Classes/AITwitterAuth.m; sourceTree = "<group>"; };
+		FCCC652319A13DF400590A50 /* AITwitterAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AITwitterAuth.h; path = ../Classes/AITwitterAuth.h; sourceTree = "<group>"; };
+		FCCC652419A13DF400590A50 /* AITwitterAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AITwitterAuth.m; path = ../Classes/AITwitterAuth.m; sourceTree = "<group>"; };
 		FCCC652619A13EFA00590A50 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		FCCC652819A13F0E00590A50 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		FCCC652D19A1495700590A50 /* AIDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDemoViewController.h; sourceTree = "<group>"; };
@@ -90,6 +93,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC735EDD19A5A2D700D1EB8F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FCCC652319A13DF400590A50 /* AITwitterAuth.h */,
+				FCCC652419A13DF400590A50 /* AITwitterAuth.m */,
+				FC735EDA19A5A24200D1EB8F /* AIAccount.h */,
+				FC735EDB19A5A24200D1EB8F /* AIAccount.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		FCCC64E219A13DB300590A50 = {
 			isa = PBXGroup;
 			children = (
@@ -127,8 +141,7 @@
 		FCCC64F419A13DB300590A50 /* TwitterAuth */ = {
 			isa = PBXGroup;
 			children = (
-				FCCC652319A13DF400590A50 /* AITwitterAuth.h */,
-				FCCC652419A13DF400590A50 /* AITwitterAuth.m */,
+				FC735EDD19A5A2D700D1EB8F /* Classes */,
 				FCCC64FD19A13DB300590A50 /* AIAppDelegate.h */,
 				FCCC64FE19A13DB300590A50 /* AIAppDelegate.m */,
 				FCCC650019A13DB300590A50 /* Main.storyboard */,
@@ -303,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCCC64FF19A13DB300590A50 /* AIAppDelegate.m in Sources */,
+				FC735EDC19A5A24200D1EB8F /* AIAccount.m in Sources */,
 				FCCC652519A13DF400590A50 /* AITwitterAuth.m in Sources */,
 				FCCC64FB19A13DB300590A50 /* main.m in Sources */,
 				FCCC652F19A1495700590A50 /* AIDemoViewController.m in Sources */,

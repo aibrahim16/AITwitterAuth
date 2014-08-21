@@ -8,6 +8,8 @@
 
 #import "AITwitterAuth.h"
 #import <Twitter/Twitter.h>
+#import <STTwitterAPI.h>
+#import "AIAccount.h"
 
 @implementation AITwitterAuth
 
@@ -37,27 +39,39 @@
 }
 
 + (void)showActionSheetForAccounts:(NSArray *)accounts
-             withCompletionHandler:(void (^) (ACAccount *account))completionHandler
+             withCompletionHandler:(void (^) (AIAccount *account))completionHandler
                      cancelHandler:(void (^) (void))cancelHandler
 {
     if (!accounts.count && completionHandler) completionHandler(nil);
 }
 
 + (void)selectAnAccountFromAccounts:(NSArray *)accounts
-            withCompletionHandler:(void (^) (ACAccount *account))completionHandler
+            withCompletionHandler:(void (^) (AIAccount *account))completionHandler
                     cancelHandler:(void (^) (void))cancelHandler
 {
     if (!completionHandler) return;
     
     if (accounts.count == 1) {
-        completionHandler(accounts[0]);
+        ACAccount *account = accounts[0];
+        STTwitterAPI *twitterAPI = [STTwitterAPI twitterAPIOSWithAccount:account];
+        [twitterAPI getUsersShowForUserID:nil orScreenName:account.username includeEntities:nil successBlock:^(NSDictionary *user) {
+            completionHandler([[AIAccount alloc] initWithIdentifier:[account valueForKey:@"properties"][@"user_id"]
+                                                           username:account.username
+                                                           fullName:account.userFullName
+                                                  profilePictureURL:user[@"profile_image_url"]]);
+        } errorBlock:^(NSError *error) {
+            completionHandler([[AIAccount alloc] initWithIdentifier:[account valueForKey:@"properties"][@"user_id"]
+                                                           username:account.username
+                                                           fullName:account.userFullName
+                                                  profilePictureURL:nil]);
+                               }];
     }
     else {
         [self showActionSheetForAccounts:accounts withCompletionHandler:completionHandler cancelHandler:cancelHandler];
     }
 }
 
-+ (void)authenticateWithCompletionHandler:(void (^) (ACAccount *account))completionHandler
++ (void)authenticateWithCompletionHandler:(void (^) (AIAccount *account))completionHandler
                            failureHandler:(void (^) (NSError *error))failureHandler
 {
     if (![SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {

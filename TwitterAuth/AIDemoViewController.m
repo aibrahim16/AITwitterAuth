@@ -22,7 +22,7 @@
 }
 
 - (IBAction)login:(id)sender {
-    [AITwitterAuth authenticateWithCompletionHandler:^(ACAccount *account) {
+    [AITwitterAuth authenticateWithCompletionHandler:^(AIAccount *account) {
         [self showMessage:[NSString stringWithFormat:@"%@ has been successfully authenticated.", account.username]];
     } failureHandler:^(NSError *error) {
         [self showMessage:error.localizedDescription];
