@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A0869C73E734E6E88DBDA7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B24474DD06C1472BAD8121DD /* libPods.a */; };
-		6E0B365119C8624F005382F3 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0B365019C8624F005382F3 /* UIActionSheet+Blocks.m */; };
+		6E80A59C19C86E90003A9C12 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E80A59B19C86E90003A9C12 /* UIActionSheet+Blocks.m */; };
 		FC735EDC19A5A24200D1EB8F /* AIAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = FC735EDB19A5A24200D1EB8F /* AIAccount.m */; };
 		FCCC64EF19A13DB300590A50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC64EE19A13DB300590A50 /* Foundation.framework */; };
 		FCCC64F119A13DB300590A50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC64F019A13DB300590A50 /* CoreGraphics.framework */; };
@@ -40,8 +40,8 @@
 
 /* Begin PBXFileReference section */
 		424668991E6E476192C0A907 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		6E0B364F19C8624F005382F3 /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
-		6E0B365019C8624F005382F3 /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
+		6E80A59A19C86E90003A9C12 /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+Blocks.h"; path = "Classes/UIActionSheet+Blocks.h"; sourceTree = SOURCE_ROOT; };
+		6E80A59B19C86E90003A9C12 /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIActionSheet+Blocks.m"; path = "Classes/UIActionSheet+Blocks.m"; sourceTree = SOURCE_ROOT; };
 		B24474DD06C1472BAD8121DD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC735EDA19A5A24200D1EB8F /* AIAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIAccount.h; path = ../Classes/AIAccount.h; sourceTree = "<group>"; };
 		FC735EDB19A5A24200D1EB8F /* AIAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AIAccount.m; path = ../Classes/AIAccount.m; sourceTree = "<group>"; };
@@ -96,15 +96,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6E0B364E19C86248005382F3 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				6E0B364F19C8624F005382F3 /* UIActionSheet+Blocks.h */,
-				6E0B365019C8624F005382F3 /* UIActionSheet+Blocks.m */,
-			);
-			name = Categories;
-			sourceTree = "<group>";
-		};
 		FC735EDD19A5A2D700D1EB8F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +103,8 @@
 				FCCC652419A13DF400590A50 /* AITwitterAuth.m */,
 				FC735EDA19A5A24200D1EB8F /* AIAccount.h */,
 				FC735EDB19A5A24200D1EB8F /* AIAccount.m */,
+				6E80A59A19C86E90003A9C12 /* UIActionSheet+Blocks.h */,
+				6E80A59B19C86E90003A9C12 /* UIActionSheet+Blocks.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -154,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				FC735EDD19A5A2D700D1EB8F /* Classes */,
-				6E0B364E19C86248005382F3 /* Categories */,
 				FCCC64FD19A13DB300590A50 /* AIAppDelegate.h */,
 				FCCC64FE19A13DB300590A50 /* AIAppDelegate.m */,
 				FCCC650019A13DB300590A50 /* Main.storyboard */,
@@ -328,8 +320,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E0B365119C8624F005382F3 /* UIActionSheet+Blocks.m in Sources */,
 				FCCC64FF19A13DB300590A50 /* AIAppDelegate.m in Sources */,
+				6E80A59C19C86E90003A9C12 /* UIActionSheet+Blocks.m in Sources */,
 				FC735EDC19A5A24200D1EB8F /* AIAccount.m in Sources */,
 				FCCC652519A13DF400590A50 /* AITwitterAuth.m in Sources */,
 				FCCC64FB19A13DB300590A50 /* main.m in Sources */,
