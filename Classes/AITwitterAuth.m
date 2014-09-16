@@ -10,6 +10,7 @@
 #import <Twitter/Twitter.h>
 #import <STTwitterAPI.h>
 #import "AIAccount.h"
+#import "UIActionSheet+Blocks.h"
 
 @implementation AITwitterAuth
 
@@ -42,7 +43,30 @@
              withCompletionHandler:(void (^) (AIAccount *account))completionHandler
                      cancelHandler:(void (^) (void))cancelHandler
 {
-    if (!accounts.count && completionHandler) completionHandler(nil);
+    if (!accounts.count && completionHandler) {
+        completionHandler(nil);
+    } else {
+        UIWindow *appWindow = [[[UIApplication sharedApplication] delegate] window];
+        [UIActionSheet showInView:appWindow
+                        withTitle:@"Choose a Twitter account"
+                cancelButtonTitle:@"Cancel"
+           destructiveButtonTitle:nil
+                otherButtonTitles:[self titlesForAccounts:accounts]
+                         tapBlock:^(UIActionSheet *actionSheet, NSInteger buttonIndex) {
+                             if (buttonIndex < accounts.count  && completionHandler) {
+                                 completionHandler(accounts[buttonIndex]);
+                             }
+                         }];
+    }
+}
+
++ (NSArray *)titlesForAccounts:(NSArray *)accounts
+{
+    NSMutableArray *titles = [NSMutableArray arrayWithCapacity:accounts.count];
+    for (AIAccount *account in accounts) {
+        [titles addObject:account.username];
+    }
+    return titles;
 }
 
 + (void)selectAnAccountFromAccounts:(NSArray *)accounts
