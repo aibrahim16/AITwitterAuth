@@ -53,8 +53,12 @@
            destructiveButtonTitle:nil
                 otherButtonTitles:[self titlesForAccounts:accounts]
                          tapBlock:^(UIActionSheet *actionSheet, NSInteger buttonIndex) {
-                             if (buttonIndex < accounts.count  && completionHandler) {
-                                 completionHandler(accounts[buttonIndex]);
+                             if (completionHandler) {
+                                 if (buttonIndex < accounts.count) {
+                                     completionHandler(accounts[buttonIndex]);
+                                 } else {
+                                     cancelHandler();
+                                 }
                              }
                          }];
     }
