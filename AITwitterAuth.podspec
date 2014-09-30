@@ -1,61 +1,18 @@
 Pod::Spec.new do |s|
-
   s.name         = "AITwitterAuth"
   s.version      = "0.0.3"
   s.summary      = "A library for twitter authentication"
-
-  s.description  = <<-DESC
-                   A longer description of AITwitterAuth in Markdown format.
-
-                   * Think: Why did you write this? What is the focus? What does it do?
-                   * CocoaPods will be using this to generate tags, and improve search results.
-                   * Try to keep it short, snappy and to the point.
-                   * Finally, don't worry about the indent, CocoaPods strips it!
-                   DESC
-
   s.homepage     = "https://github.com/aibrahim16/AITwitterAuth"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
-
-
-  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Licensing your code is important. See http://choosealicense.com for more info.
-  #  CocoaPods will detect a license file if there is a named LICENSE*
-  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
-  #
-
-  # s.license      = "MIT"
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
+  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
-  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the authors of the library, with email addresses. Email addresses
-  #  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
-  #  accepts just a name if you'd rather not provide an email address.
-  #
-  #  Specify a social_media_url where others can refer to, for example a twitter
-  #  profile URL.
-  #
-  
-  s.author             = { "aibrahim16" => "email@address.com" }
-  # Or just: s.author    = "aibrahim16"
+  #s.author             = { "aibrahim16" => "email@address.com" }
+  s.author    = "aibrahim16"
   # s.authors            = { "aibrahim16" => "email@address.com" }
-  # s.social_media_url   = "http://twitter.com/aibrahim16"
+  s.social_media_url   = "https://twitter.com/aibrahim16189"
 
-  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If this Pod runs only on iOS or OS X, then specify the platform and
-  #  the deployment target. You can optionally include the target after the platform.
-  #
-
-  # s.platform     = :ios
   s.platform     = :ios, "7.0"
-
-  #  When using multiple platforms
-  # s.ios.deployment_target = "7.0"
-  # s.osx.deployment_target = "10.7"
-
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -63,7 +20,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/aibrahim16/AITwitterAuth.git", :commit => "3516fc6e5912a1482418784c5805d0fd223889d9", :tag => "0.0.2" }
+  s.source       = { :git => "https://github.com/aibrahim16/AITwitterAuth.git", :commit => "622b8ba3b519f697ad3333b71ff0c4e2cc411771", :tag => "0.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

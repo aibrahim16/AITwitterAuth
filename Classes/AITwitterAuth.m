@@ -92,17 +92,17 @@
 + (void)wrapACAccount:(ACAccount *)account withCompletionHandler:(void (^) (AIAccount *account))completionHandler {
     STTwitterAPI *twitterAPI = [STTwitterAPI twitterAPIOSWithAccount:account];
     
-    [twitterAPI getUsersShowForUserID:nil orScreenName:account.username includeEntities:nil successBlock:^(NSDictionary *user) {
-        completionHandler([[AIAccount alloc] initWithIdentifier:[account valueForKey:@"properties"][@"user_id"]
+    [twitterAPI getUserInformationFor:account.username successBlock:^(NSDictionary *user) {
+        completionHandler([[AIAccount alloc] initWithIdentifier:user[@"id"]
                                                        username:account.username
-                                                       fullName:account.userFullName
+                                                       fullName:user[@"name"]
                                               profilePictureURL:user[@"profile_image_url"]]);
     } errorBlock:^(NSError *error) {
         completionHandler([[AIAccount alloc] initWithIdentifier:[account valueForKey:@"properties"][@"user_id"]
                                                        username:account.username
                                                        fullName:account.userFullName
                                               profilePictureURL:nil]);
-    }];    
+    }];
 }
 
 + (void)authenticateWithCompletionHandler:(void (^) (AIAccount *account))completionHandler
