@@ -12,5 +12,5 @@ AITwitterAuth is a library that is intended to simplify the Authentication proce
 ## Podfile
 ```Pod
 platform :ios, '7.0'
-pod "AITwitterAuth", "~> 0.0.2"
+pod "AITwitterAuth", "~> 0.0.4"
 ```
