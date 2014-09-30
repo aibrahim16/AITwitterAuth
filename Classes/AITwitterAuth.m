@@ -55,7 +55,8 @@
                          tapBlock:^(UIActionSheet *actionSheet, NSInteger buttonIndex) {
                              if (completionHandler) {
                                  if (buttonIndex < accounts.count) {
-                                     completionHandler(accounts[buttonIndex]);
+                                     ACAccount *account = accounts[0];
+                                     [self wrapACAccount:account withCompletionHandler:completionHandler];
                                  } else {
                                      cancelHandler();
                                  }
@@ -81,22 +82,27 @@
     
     if (accounts.count == 1) {
         ACAccount *account = accounts[0];
-        STTwitterAPI *twitterAPI = [STTwitterAPI twitterAPIOSWithAccount:account];
-        [twitterAPI getUsersShowForUserID:nil orScreenName:account.username includeEntities:nil successBlock:^(NSDictionary *user) {
-            completionHandler([[AIAccount alloc] initWithIdentifier:[account valueForKey:@"properties"][@"user_id"]
-                                                           username:account.username
-                                                           fullName:account.userFullName
-                                                  profilePictureURL:user[@"profile_image_url"]]);
-        } errorBlock:^(NSError *error) {
-            completionHandler([[AIAccount alloc] initWithIdentifier:[account valueForKey:@"properties"][@"user_id"]
-                                                           username:account.username
-                                                           fullName:account.userFullName
-                                                  profilePictureURL:nil]);
-                               }];
+        [self wrapACAccount:account withCompletionHandler:completionHandler];
     }
     else {
         [self showActionSheetForAccounts:accounts withCompletionHandler:completionHandler cancelHandler:cancelHandler];
     }
+}
+
++ (void)wrapACAccount:(ACAccount *)account withCompletionHandler:(void (^) (AIAccount *account))completionHandler {
+    STTwitterAPI *twitterAPI = [STTwitterAPI twitterAPIOSWithAccount:account];
+    
+    [twitterAPI getUsersShowForUserID:nil orScreenName:account.username includeEntities:nil successBlock:^(NSDictionary *user) {
+        completionHandler([[AIAccount alloc] initWithIdentifier:[account valueForKey:@"properties"][@"user_id"]
+                                                       username:account.username
+                                                       fullName:account.userFullName
+                                              profilePictureURL:user[@"profile_image_url"]]);
+    } errorBlock:^(NSError *error) {
+        completionHandler([[AIAccount alloc] initWithIdentifier:[account valueForKey:@"properties"][@"user_id"]
+                                                       username:account.username
+                                                       fullName:account.userFullName
+                                              profilePictureURL:nil]);
+    }];    
 }
 
 + (void)authenticateWithCompletionHandler:(void (^) (AIAccount *account))completionHandler
