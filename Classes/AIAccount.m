@@ -25,4 +25,15 @@
     return self;
 }
 
+- (instancetype)initWithTwitterUserObject:(NSDictionary *)user {
+    NSString *pictureURL = user[@"profile_image_url"];
+    if (pictureURL) {
+        pictureURL = [pictureURL stringByReplacingOccurrencesOfString:@"_normal" withString:@""];
+        pictureURL = [pictureURL stringByReplacingOccurrencesOfString:@"_bigger" withString:@""];
+        pictureURL = [pictureURL stringByReplacingOccurrencesOfString:@"_mini" withString:@""];
+    }
+    self = [self initWithIdentifier:user[@"id"] username:user[@"screen_name"] fullName:user[@"name"] profilePictureURL:pictureURL];
+    return self;
+}
+
 @end

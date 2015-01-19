@@ -18,4 +18,7 @@
                           username:(NSString *)username
                           fullName:(NSString *)fullName
                  profilePictureURL:(NSString *)pictureURL;
+
+- (instancetype)initWithTwitterUserObject:(NSDictionary *)user;
+
 @end

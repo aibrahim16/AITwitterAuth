@@ -93,10 +93,7 @@
     STTwitterAPI *twitterAPI = [STTwitterAPI twitterAPIOSWithAccount:account];
     
     [twitterAPI getUserInformationFor:account.username successBlock:^(NSDictionary *user) {
-        completionHandler([[AIAccount alloc] initWithIdentifier:user[@"id"]
-                                                       username:account.username
-                                                       fullName:user[@"name"]
-                                              profilePictureURL:user[@"profile_image_url"]]);
+        completionHandler([[AIAccount alloc] initWithTwitterUserObject:user]);
     } errorBlock:^(NSError *error) {
         completionHandler([[AIAccount alloc] initWithIdentifier:[account valueForKey:@"properties"][@"user_id"]
                                                        username:account.username

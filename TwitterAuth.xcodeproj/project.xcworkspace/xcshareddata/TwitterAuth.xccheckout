@@ -10,31 +10,31 @@
 	<string>TwitterAuth</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>07C21C5B-BE29-4736-8CE0-A84FE4D17044</key>
-		<string>https://github.com/inaka/AITwitterAuth.git</string>
+		<key>6023B67A01B80BBA63A7B64BBE77487A03240C3F</key>
+		<string>github.com:aibrahim16/AITwitterAuth.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TwitterAuth.xcodeproj/project.xcworkspace</string>
+	<string>TwitterAuth.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>07C21C5B-BE29-4736-8CE0-A84FE4D17044</key>
+		<key>6023B67A01B80BBA63A7B64BBE77487A03240C3F</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/inaka/AITwitterAuth.git</string>
+	<string>github.com:aibrahim16/AITwitterAuth.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>07C21C5B-BE29-4736-8CE0-A84FE4D17044</string>
+	<string>6023B67A01B80BBA63A7B64BBE77487A03240C3F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>07C21C5B-BE29-4736-8CE0-A84FE4D17044</string>
+			<string>6023B67A01B80BBA63A7B64BBE77487A03240C3F</string>
 			<key>IDESourceControlWCCName</key>
-			<string>AITwitterAuth</string>
+			<string>TwitterAuth</string>
 		</dict>
 	</array>
 </dict>
