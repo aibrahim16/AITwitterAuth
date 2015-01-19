@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AITwitterAuth"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "A library for twitter authentication"
   s.homepage     = "https://github.com/aibrahim16/AITwitterAuth"
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/aibrahim16/AITwitterAuth.git", :commit => "d633c71d2afe14814ca65bce2799051c3b8acf12", :tag => "0.0.4" }
+  s.source       = { :git => "https://github.com/aibrahim16/AITwitterAuth.git", :commit => "b2e4e2d", :tag => "0.0.5" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
