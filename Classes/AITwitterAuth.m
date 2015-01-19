@@ -55,7 +55,7 @@
                          tapBlock:^(UIActionSheet *actionSheet, NSInteger buttonIndex) {
                              if (completionHandler) {
                                  if (buttonIndex < accounts.count) {
-                                     ACAccount *account = accounts[0];
+                                     ACAccount *account = accounts[buttonIndex];
                                      [self wrapACAccount:account withCompletionHandler:completionHandler];
                                  } else {
                                      cancelHandler();
