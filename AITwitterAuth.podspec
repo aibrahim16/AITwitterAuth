@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/aibrahim16/AITwitterAuth.git", :commit => "b2e4e2d", :tag => "0.0.5" }
+  s.source       = { :git => "https://github.com/aibrahim16/AITwitterAuth.git", :commit => "efc1c5b", :tag => "0.0.6" }
 
   s.source_files  = 'Classes/*.{h,m}'
 
