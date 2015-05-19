@@ -39,10 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		424668991E6E476192C0A907 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		6E80A59A19C86E90003A9C12 /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+Blocks.h"; path = "Classes/UIActionSheet+Blocks.h"; sourceTree = SOURCE_ROOT; };
 		6E80A59B19C86E90003A9C12 /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIActionSheet+Blocks.m"; path = "Classes/UIActionSheet+Blocks.m"; sourceTree = SOURCE_ROOT; };
+		834EB806073B3D6D80B47139 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B24474DD06C1472BAD8121DD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB482574CBF6BBEFFA5B32ED /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FC735EDA19A5A24200D1EB8F /* AIAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIAccount.h; path = ../Classes/AIAccount.h; sourceTree = "<group>"; };
 		FC735EDB19A5A24200D1EB8F /* AIAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AIAccount.m; path = ../Classes/AIAccount.m; sourceTree = "<group>"; };
 		FCCC64EB19A13DB300590A50 /* TwitterAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A68EA44ED03C2CBD517610B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				834EB806073B3D6D80B47139 /* Pods.debug.xcconfig */,
+				DB482574CBF6BBEFFA5B32ED /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FC735EDD19A5A2D700D1EB8F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +126,7 @@
 				FCCC651319A13DB300590A50 /* TwitterAuthTests */,
 				FCCC64ED19A13DB300590A50 /* Frameworks */,
 				FCCC64EC19A13DB300590A50 /* Products */,
-				424668991E6E476192C0A907 /* Pods.xcconfig */,
+				1A68EA44ED03C2CBD517610B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -295,7 +305,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7D46520D70C5462D9848E706 /* Check Pods Manifest.lock */ = {
@@ -449,7 +459,7 @@
 		};
 		FCCC651E19A13DB300590A50 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 424668991E6E476192C0A907 /* Pods.xcconfig */;
+			baseConfigurationReference = 834EB806073B3D6D80B47139 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -463,7 +473,7 @@
 		};
 		FCCC651F19A13DB300590A50 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 424668991E6E476192C0A907 /* Pods.xcconfig */;
+			baseConfigurationReference = DB482574CBF6BBEFFA5B32ED /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
