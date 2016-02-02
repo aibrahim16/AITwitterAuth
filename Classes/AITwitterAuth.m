@@ -8,7 +8,7 @@
 
 #import "AITwitterAuth.h"
 #import <Twitter/Twitter.h>
-#import <STTwitterAPI.h>
+#import "STTwitterAPI.h"
 #import "AIAccount.h"
 #import "UIActionSheet+Blocks.h"
 
