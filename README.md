@@ -9,6 +9,23 @@ AITwitterAuth is a library that is intended to simplify the Authentication proce
     }];
 ```
 
+```Swift
+
+@IBAction func connectTwitter(sender: UIButton) {
+        AITwitterAuth.authenticateWithCompletionHandler(twitterLogged, failureHandler: twitterError)
+    }
+    
+    func twitterLogged(account: AIAccount!) {
+        println(account.username)
+    }
+    
+    func twitterError(error: NSError!) {
+        println(error.localizedDescription)
+    }
+
+
+```
+
 ## Podfile
 ```Pod
 platform :ios, '7.0'
